@@ -1,6 +1,6 @@
 # Hi, I'm Turner Jabbour 👋
 
-Focused on improving ROCm support within vLLM.
+Improving ROCm support within vLLM.
 
 ## 🛠 What I'm Working On
 * [rocm-learning](https://github.com/wjabbour/rocm-learning) - a repository dedicated to showcasing my growth over time in ROCm.
