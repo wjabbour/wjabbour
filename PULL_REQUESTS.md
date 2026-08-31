@@ -4,6 +4,9 @@
 
 | Opened | PR | Repo | Description | Impact | Status |
 |---|---|---|---|---|---|
+| 08/30/2026 | [#54474](https://github.com/vllm-project/vllm/pull/54474) | vllm-project/vllm | Add `AITERConfig` object for AITER op toggles | Replaces ~16 loose `VLLM_ROCM_USE_AITER*` env vars with one typed, cache-hashed sub-config; unset config preserves current behavior | Awaiting review (supersedes #41159) |
+| 08/30/2026 | [#54466](https://github.com/vllm-project/vllm/pull/54466) | vllm-project/vllm | Wire `indexer_kv_dtype` through on the MiniMax-M3 AMD path | Fixes a KV-cache dtype mismatch on the MiniMax-M3 sparse-attention indexer for ROCm; Hot Aisle-validated for correctness | Awaiting review |
+| 08/29/2026 | [#54388](https://github.com/vllm-project/vllm/pull/54388) | vllm-project/vllm | Remove `get_cached_compilation_config`, read compilation config directly | Drops an unjustified cache (~9ns/call, ~1k calls at startup, 0 on the forward path) that had caused a silent wrong-kernel-dispatch bug across config swaps | Awaiting review (pinged mgoin + skyloevil) |
 | 08/26/2026 | [#53925](https://github.com/vllm-project/vllm/pull/53925) | vllm-project/vllm | Add multi-GPU test groups for nightly-log-confirmed skips (fixes #53840) | Restores real execution to 11 of 12 files with silently skipped multi-GPU tests | Awaiting review |
 | 08/25/2026 | [#53813](https://github.com/vllm-project/vllm/pull/53813) | vllm-project/vllm | Multi-GPU CI coverage lint tool | Would catch future silent multi-GPU skips automatically instead of relying on manual log audits | Draft, exploratory |
 | 08/24/2026 | [#53643](https://github.com/vllm-project/vllm/pull/53643) | vllm-project/vllm | MoE dispatch + Triton qzeros reshape tests (26 tests) | Adds regression coverage for MoE dispatch and quantization reshape paths that had none | Approved by bnellnm, awaiting second review |
