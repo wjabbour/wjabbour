@@ -4,6 +4,7 @@
 
 | Opened | PR | Repo | Description | Impact | Status |
 |---|---|---|---|---|---|
+| 09/01/2026 | [#54867](https://github.com/vllm-project/vllm/pull/54867) | vllm-project/vllm | Pre-commit check that new tests are tethered to a Buildkite job | Fails a PR that adds a `tests/` file no CI job collects, so a test can no longer merge and then silently never run | Awaiting review (from a @khluu + @njhill ask) |
 | 08/30/2026 | [#54474](https://github.com/vllm-project/vllm/pull/54474) | vllm-project/vllm | Add `AITERConfig` object for AITER op toggles | Replaces ~16 loose `VLLM_ROCM_USE_AITER*` env vars with one typed, cache-hashed sub-config; unset config preserves current behavior | Awaiting review (supersedes #41159) |
 | 08/29/2026 | [#54388](https://github.com/vllm-project/vllm/pull/54388) | vllm-project/vllm | Remove `get_cached_compilation_config`, read compilation config directly | Drops an unjustified cache (~9ns/call, ~1k calls at startup, 0 on the forward path) that had caused a silent wrong-kernel-dispatch bug across config swaps | Awaiting review (pinged mgoin + skyloevil) |
 | 08/26/2026 | [#53925](https://github.com/vllm-project/vllm/pull/53925) | vllm-project/vllm | Add multi-GPU test groups for nightly-log-confirmed skips (fixes #53840) | Restores real execution to 11 of 12 files with silently skipped multi-GPU tests | Awaiting review |
