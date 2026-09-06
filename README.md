@@ -1,6 +1,6 @@
 # Hi, I'm Turner Jabbour 👋
 
-I've been a software engineer for ~7 years, primarily working in Node and React. Around September 2025, I became deeply interested in GPU programming, ROCm, and inference.
+I've been a software engineer for ~7 years, primarily working in Node and React. In September 2025, I became deeply interested in GPU programming, ROCm, and inference.
 
 I'm focused on improving ROCm support within [vLLM](https://github.com/vllm-project/vllm).
 
