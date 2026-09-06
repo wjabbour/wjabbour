@@ -12,7 +12,6 @@
 | 08/26/2026 | [#53925](https://github.com/vllm-project/vllm/pull/53925) | vllm-project/vllm | Add multi-GPU test groups for nightly-log-confirmed skips (fixes #53840) | Restores real execution to 11 of 12 files with silently skipped multi-GPU tests | Awaiting review |
 | 08/24/2026 | [#53643](https://github.com/vllm-project/vllm/pull/53643) | vllm-project/vllm | MoE dispatch + Triton qzeros reshape tests (26 tests) | Adds regression coverage for MoE dispatch and quantization reshape paths that had none | Approved by bnellnm, awaiting second review |
 | 08/21/2026 | [#53341](https://github.com/vllm-project/vllm/pull/53341) | vllm-project/vllm | Fix 5 TODO-tagged shellcheck warnings | Clears long-standing suppressed lint warnings flagged in #52572 | Awaiting review |
-| 05/07/2026 | [#41978](https://github.com/vllm-project/vllm/pull/41978) | vllm-project/vllm | Fix wvSplitKrc kernel guard: restore CDNA support (was gfx950-only) | Restores a GEMM kernel path to all CDNA GPUs instead of just gfx950 | Draft, exploratory |
 | 04/29/2026 | [#41187](https://github.com/vllm-project/vllm/pull/41187) | vllm-project/vllm | Fix LDS bank conflicts in vecMatMul reduction_smem layout | Removes a memory-access bottleneck in the vecMatMul reduction kernel | Awaiting review |
 | 04/24/2026 | [#40827](https://github.com/vllm-project/vllm/pull/40827) | vllm-project/vllm | Rename LLMM1 to vecMatMul, refactor, fix RDNA4 correctness bugs | Fixes real correctness bugs on RDNA4 (consumer GPUs), not just a rename | Under discussion |
 
